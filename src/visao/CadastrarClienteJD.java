@@ -12,7 +12,7 @@ import modelo.Cliente;
 
 /**
  *
- * @author Usuário
+ * @Josieli
  */
 public class CadastrarClienteJD extends javax.swing.JDialog {
 

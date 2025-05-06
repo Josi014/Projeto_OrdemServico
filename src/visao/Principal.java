@@ -6,7 +6,7 @@ package visao;
 
 /**
  *
- * @author Usuário
+ * @Josieli
  */
 public class Principal extends javax.swing.JFrame {
 
@@ -30,6 +30,7 @@ public class Principal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         minListarServico = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        minSobre = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,6 +47,20 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Ajuda");
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
+
+        minSobre.setText("Sobre");
+        minSobre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minSobreActionPerformed(evt);
+            }
+        });
+        jMenu2.add(minSobre);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -65,9 +80,18 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void minListarServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minListarServicoActionPerformed
-       OrdemServicoJF telaListaOrdemServico = new OrdemServicoJF();
-       telaListaOrdemServico.setVisible(true);
+        OrdemServicoJF telaListaOrdemServico = new OrdemServicoJF();
+        telaListaOrdemServico.setVisible(true);
     }//GEN-LAST:event_minListarServicoActionPerformed
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void minSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minSobreActionPerformed
+        SobreJD telaSobre = new SobreJD(this, true);
+        telaSobre.setVisible(true);
+    }//GEN-LAST:event_minSobreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -109,5 +133,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem minListarServico;
+    private javax.swing.JMenuItem minSobre;
     // End of variables declaration//GEN-END:variables
 }

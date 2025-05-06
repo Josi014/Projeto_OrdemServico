@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Usuário
+ * @Josieli
  */
 public class ClienteJF extends javax.swing.JDialog {
 
