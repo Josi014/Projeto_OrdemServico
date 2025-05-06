@@ -350,7 +350,16 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
     }//GEN-LAST:event_cmbTipoVeiculoActionPerformed
 
     private void bntLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntLimparActionPerformed
-        // TODO add your handling code here:
+        txtNomeCliente.setText("");
+        txtCodigoCliente.setText("");
+        txtPlaca.setText("");
+        txtModeloVeiculo.setText("");
+        txtAnoFabricacao.setText("");
+        txtDescricao.setText("");
+        txtValor.setText("");
+        spCodigoServico.setValue(0);
+
+
     }//GEN-LAST:event_bntLimparActionPerformed
 
     private void cmbCorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCorActionPerformed
@@ -443,7 +452,7 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-  
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 CadastrarOrdemServicoJD dialog = new CadastrarOrdemServicoJD(new javax.swing.JFrame(), true);

@@ -60,10 +60,14 @@ public class OrdemServicoJF extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         lblTitulo.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(0, 0, 204));
         lblTitulo.setText("Serviços Cadastrados");
 
         jScrollPane1.setViewportView(lstServicos);
 
+        bntAdicionarServico.setBackground(new java.awt.Color(51, 153, 255));
+        bntAdicionarServico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        bntAdicionarServico.setForeground(new java.awt.Color(255, 255, 255));
         bntAdicionarServico.setText("Adicionar");
         bntAdicionarServico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,6 +75,9 @@ public class OrdemServicoJF extends javax.swing.JFrame {
             }
         });
 
+        bntRemoverServico.setBackground(new java.awt.Color(51, 153, 255));
+        bntRemoverServico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        bntRemoverServico.setForeground(new java.awt.Color(255, 255, 255));
         bntRemoverServico.setText("Remover");
         bntRemoverServico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,6 +85,9 @@ public class OrdemServicoJF extends javax.swing.JFrame {
             }
         });
 
+        bntEditarServico.setBackground(new java.awt.Color(51, 153, 255));
+        bntEditarServico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        bntEditarServico.setForeground(new java.awt.Color(255, 255, 255));
         bntEditarServico.setText("Editar");
         bntEditarServico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +106,7 @@ public class OrdemServicoJF extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 494, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(bntAdicionarServico, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                            .addComponent(bntAdicionarServico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(bntRemoverServico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(bntEditarServico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(lblTitulo))
@@ -111,11 +121,11 @@ public class OrdemServicoJF extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(bntAdicionarServico)
-                        .addGap(18, 18, 18)
-                        .addComponent(bntRemoverServico)
-                        .addGap(18, 18, 18)
-                        .addComponent(bntEditarServico)))
+                        .addComponent(bntAdicionarServico, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(bntRemoverServico, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(bntEditarServico, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(113, Short.MAX_VALUE))
         );
 
