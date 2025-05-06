@@ -78,7 +78,7 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+//Criação da ação do meu item de menu responsável por listar meus serviços
     private void minListarServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minListarServicoActionPerformed
         OrdemServicoJF telaListaOrdemServico = new OrdemServicoJF();
         telaListaOrdemServico.setVisible(true);
@@ -87,7 +87,7 @@ public class Principal extends javax.swing.JFrame {
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu2ActionPerformed
-
+//Criação da ação responsável por mostrar a tela sobre
     private void minSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minSobreActionPerformed
         SobreJD telaSobre = new SobreJD(this, true);
         telaSobre.setVisible(true);

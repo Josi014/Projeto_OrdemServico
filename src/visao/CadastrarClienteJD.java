@@ -20,7 +20,11 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
 
     /**
      * Creates new form CadastroCursoJD
-     */
+     
+    *Janela de diálogo para o cadastro de um novo cliente.
+    *Este JDialog é modal e bloqueia a janela pai até que seja fechado.
+    *Um novo objeto Cliente é instanciado ao abrir o formulário.
+    * */
     public CadastrarClienteJD(java.awt.Window parent, boolean modal) {
         super(parent, java.awt.Dialog.ModalityType.APPLICATION_MODAL);
         initComponents();
@@ -317,6 +321,23 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
     }//GEN-LAST:event_bntLimparActionPerformed
 
     private void bntSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSalvarActionPerformed
+        /**
+         * Esta ação é executada ao clicar no botão "Salvar".
+         *
+         * Este método verifica se os campos do formulário foram preenchidos e,
+         * se sim, define os valores correspondentes no objeto Cliente.
+         *
+         * Se o campo de código estiver preenchido, converte para inteiro e
+         * define, nome, telefone e e-mail são preenchidos se não estiverem
+         * vazios. E CPF tem prioridade sobre CNPJ. Pelo menos um dos dois deve
+         * ser informado.
+         *
+         * Caso nem o CPF nem o CNPJ estejam preenchidos, exibe uma mensagem de
+         * erro e interrompe o processo de salvamento.
+         *
+         * Ao final, fecha a janela de cadastro (dispose).
+         */
+
         if (!txtCodigo.getText().trim().isEmpty()) {
             cliente.setCodigo(Integer.parseInt(txtCodigo.getText().trim()));
         }
@@ -376,7 +397,7 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
         //</editor-fold>
 
         /* Create and display the form */
-         java.awt.EventQueue.invokeLater(new Runnable() {
+        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 CadastrarClienteJD dialog = new CadastrarClienteJD(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
