@@ -163,6 +163,9 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
 
         lblValor.setText("Valor:");
 
+        bntLimpar.setBackground(new java.awt.Color(102, 153, 255));
+        bntLimpar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bntLimpar.setForeground(new java.awt.Color(255, 255, 255));
         bntLimpar.setText("Limpar");
         bntLimpar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,6 +173,9 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
             }
         });
 
+        bntSalvar.setBackground(new java.awt.Color(51, 153, 255));
+        bntSalvar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bntSalvar.setForeground(new java.awt.Color(255, 255, 255));
         bntSalvar.setText("Salvar");
         bntSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,6 +200,9 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
         txtDescricao.setRows(5);
         jScrollPane1.setViewportView(txtDescricao);
 
+        bntCancelar.setBackground(new java.awt.Color(51, 153, 255));
+        bntCancelar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bntCancelar.setForeground(new java.awt.Color(255, 255, 255));
         bntCancelar.setText("Cancelar");
         bntCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,11 +222,11 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(bntLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(188, 188, 188)
-                                .addComponent(bntSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(bntLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(118, 118, 118)
+                                .addComponent(bntSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(bntCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(bntCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(lblValor)
