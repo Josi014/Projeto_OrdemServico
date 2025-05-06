@@ -163,7 +163,7 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
 
         lblValor.setText("Valor:");
 
-        bntLimpar.setBackground(new java.awt.Color(102, 153, 255));
+        bntLimpar.setBackground(new java.awt.Color(51, 153, 255));
         bntLimpar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         bntLimpar.setForeground(new java.awt.Color(255, 255, 255));
         bntLimpar.setText("Limpar");

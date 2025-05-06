@@ -34,7 +34,10 @@ public class Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMenuBar1.setForeground(new java.awt.Color(51, 51, 255));
+
         jMenu1.setText("Cadastrar");
+        jMenu1.setBorderPainted(false);
 
         minListarServico.setText("Servico");
         minListarServico.addActionListener(new java.awt.event.ActionListener() {
@@ -73,7 +76,7 @@ public class Principal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 474, Short.MAX_VALUE)
+            .addGap(0, 437, Short.MAX_VALUE)
         );
 
         pack();
