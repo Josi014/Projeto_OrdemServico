@@ -349,6 +349,7 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbTipoVeiculoActionPerformed
 
+    //Cria acão para limpar os campos textField
     private void bntLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntLimparActionPerformed
         txtNomeCliente.setText("");
         txtCodigoCliente.setText("");
@@ -390,6 +391,11 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
 
     private void bntSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSalvarActionPerformed
         if (txtDataAbertura != null && !txtDataAbertura.getText().trim().isEmpty()) {
+
+            // Aqui é verificado se o campo de data de abertura foi preenchido.
+            // Caso positivo, converte a string no formato "dd/MM/yyyy" para um objeto Date.
+            // Após, transforma esse Date em um Calendar e define na ordem de serviço.
+            // Se a conversão falhar imprime o erro no console.
             try {
                 SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
                 Date data = formato.parse(txtDataAbertura.getText().trim());
