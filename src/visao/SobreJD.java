@@ -39,6 +39,9 @@ public class SobreJD extends java.awt.Dialog {
 
         jLabel3.setText("Desenvolvido para a disciplina de LPOO (2025-1)");
 
+        btnFechar.setBackground(new java.awt.Color(51, 153, 255));
+        btnFechar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnFechar.setForeground(new java.awt.Color(255, 255, 255));
         btnFechar.setText("Fechar");
         btnFechar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,6 +49,7 @@ public class SobreJD extends java.awt.Dialog {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Sobre o Sistema:");
 
         jLabel2.setText("Sistema de Cadastro de Ordem de serviço");
@@ -74,7 +78,7 @@ public class SobreJD extends java.awt.Dialog {
                 .addComponent(jLabel3)
                 .addGap(62, 62, 62)
                 .addComponent(btnFechar)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         pack();
