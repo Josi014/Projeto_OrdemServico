@@ -29,6 +29,7 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         minListarServico = new javax.swing.JMenuItem();
+        minCadastrarCliente = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         minSobre = new javax.swing.JMenuItem();
 
@@ -46,6 +47,14 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jMenu1.add(minListarServico);
+
+        minCadastrarCliente.setText("Cliente");
+        minCadastrarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minCadastrarClienteActionPerformed(evt);
+            }
+        });
+        jMenu1.add(minCadastrarCliente);
 
         jMenuBar1.add(jMenu1);
 
@@ -96,6 +105,12 @@ public class Principal extends javax.swing.JFrame {
         telaSobre.setVisible(true);
     }//GEN-LAST:event_minSobreActionPerformed
 
+    private void minCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minCadastrarClienteActionPerformed
+        ClienteJD telaCliente = new ClienteJD(this, null, true);
+        telaCliente.setVisible(true);
+
+    }//GEN-LAST:event_minCadastrarClienteActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -135,6 +150,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem minCadastrarCliente;
     private javax.swing.JMenuItem minListarServico;
     private javax.swing.JMenuItem minSobre;
     // End of variables declaration//GEN-END:variables

@@ -380,8 +380,9 @@ public class CadastrarOrdemServicoJD extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void bntPesquisarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntPesquisarClienteActionPerformed
-        ClienteJF clienteJD = new ClienteJF(this, true);
-        clienteJD.setVisible(true);
+        ClienteJD telaCliente = new ClienteJD(this, this, true);
+        telaCliente.setVisible(true);
+
 
     }//GEN-LAST:event_bntPesquisarClienteActionPerformed
 

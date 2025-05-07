@@ -15,7 +15,7 @@ import javax.swing.JFrame;
  *
  * @Josieli
  */
-public class ClienteJF extends javax.swing.JDialog {
+public class ClienteJD extends javax.swing.JDialog {
 
     private CadastrarOrdemServicoJD ordemServico;
 
@@ -35,10 +35,8 @@ public class ClienteJF extends javax.swing.JDialog {
     /**
      * Creates new form ClienteJF
      */
-   
-
-    public ClienteJF(CadastrarOrdemServicoJD ordemServico, boolean modal) {
-        super(ordemServico, modal);
+    public ClienteJD(java.awt.Window parent, CadastrarOrdemServicoJD ordemServico, boolean modal) {
+        super(parent, ModalityType.APPLICATION_MODAL);
         this.ordemServico = ordemServico;
         initComponents();
         carregarClientes();
@@ -173,7 +171,7 @@ public class ClienteJF extends javax.swing.JDialog {
                 ordemServico.setCliente(clienteSelecionado);
             }
         } else {
-             JOptionPane.showMessageDialog(this, "A tela de Ordem de Serviço não está vinculada!");
+            JOptionPane.showMessageDialog(this, "A tela de Ordem de Serviço não está vinculada!");
         }
         this.dispose();
 
