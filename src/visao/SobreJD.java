@@ -43,6 +43,7 @@ public class SobreJD extends java.awt.Dialog {
         btnFechar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnFechar.setForeground(new java.awt.Color(255, 255, 255));
         btnFechar.setText("Fechar");
+        btnFechar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnFechar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFecharActionPerformed(evt);

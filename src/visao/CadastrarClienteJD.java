@@ -20,11 +20,12 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
 
     /**
      * Creates new form CadastroCursoJD
-     
-    *Janela de diálogo para o cadastro de um novo cliente.
-    *Este JDialog é modal e bloqueia a janela pai até que seja fechado.
-    *Um novo objeto Cliente é instanciado ao abrir o formulário.
-    * */
+     *
+     * Janela de diálogo para o cadastro de um novo cliente. Este JDialog é
+     * modal e bloqueia a janela pai até que seja fechado. Um novo objeto
+     * Cliente é instanciado ao abrir o formulário.
+    *
+     */
     public CadastrarClienteJD(java.awt.Window parent, boolean modal) {
         super(parent, java.awt.Dialog.ModalityType.APPLICATION_MODAL);
         initComponents();
@@ -194,28 +195,27 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtCep, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(lblCpf)
-                            .addComponent(bntCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(bntLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblNumero)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(bntSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(bntLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lblComplemento)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtComplemento))))
+                                .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblComplemento)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtComplemento))
                             .addComponent(lblEndereco)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblLogradouro)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(txtLogradouro, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addComponent(bntSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(bntCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(71, 71, 71)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -285,9 +285,9 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
                     .addComponent(lblBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bntLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bntSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bntCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(bntCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bntLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(70, 70, 70))
         );
 
@@ -327,7 +327,18 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
     }//GEN-LAST:event_bntCancelarActionPerformed
 
     private void bntLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntLimparActionPerformed
-        // TODO add your handling code here:
+        txtCodigo.setText("");
+        txtNomeCliente.setText("");
+        txtTelefone.setText("");
+        txtEmail.setText("");
+        txtCpf.setText("");
+        txtCnpj.setText("");
+        txtCep.setText("");
+        txtLogradouro.setText("");
+        txtBairro.setText("");
+        txtNumero.setText("");
+        txtComplemento.setText("");
+
     }//GEN-LAST:event_bntLimparActionPerformed
 
     private void bntSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSalvarActionPerformed
@@ -367,6 +378,21 @@ public class CadastrarClienteJD extends javax.swing.JDialog {
         } else {
             JOptionPane.showMessageDialog(null, "Preencha o CPF ou o CNPJ.");
             return;
+        }
+        if (!txtCep.getText().trim().isEmpty()) {
+            cliente.setCep(txtCep.getText().trim());
+        }
+        if (!txtLogradouro.getText().trim().isEmpty()) {
+            cliente.setLogradouro(txtLogradouro.getText().trim());
+        }
+        if (!txtBairro.getText().trim().isEmpty()) {
+            cliente.setBairro(txtBairro.getText().trim());
+        }
+        if (!txtNumero.getText().trim().isEmpty()) {
+            cliente.setNumeroCasa(Integer.parseInt(txtNumero.getText().trim()));
+        }
+        if (!txtComplemento.getText().trim().isEmpty()) {
+            cliente.setComplemento(txtComplemento.getText().trim());
         }
 
         dispose();

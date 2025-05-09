@@ -62,10 +62,14 @@ public class ClienteJD extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         lblTitulo.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(0, 0, 204));
         lblTitulo.setText("Clientes Cadastrados");
 
         jScrollPane1.setViewportView(lstClientes);
 
+        bntAdicionar.setBackground(new java.awt.Color(51, 153, 255));
+        bntAdicionar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bntAdicionar.setForeground(new java.awt.Color(255, 255, 255));
         bntAdicionar.setText("Adicionar");
         bntAdicionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +77,9 @@ public class ClienteJD extends javax.swing.JDialog {
             }
         });
 
+        bntRemover.setBackground(new java.awt.Color(51, 153, 255));
+        bntRemover.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bntRemover.setForeground(new java.awt.Color(255, 255, 255));
         bntRemover.setText("Remover");
         bntRemover.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +87,9 @@ public class ClienteJD extends javax.swing.JDialog {
             }
         });
 
+        bntEditar.setBackground(new java.awt.Color(51, 153, 255));
+        bntEditar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bntEditar.setForeground(new java.awt.Color(255, 255, 255));
         bntEditar.setText("Editar");
         bntEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +97,9 @@ public class ClienteJD extends javax.swing.JDialog {
             }
         });
 
+        bntSelecionar.setBackground(new java.awt.Color(51, 153, 255));
+        bntSelecionar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bntSelecionar.setForeground(new java.awt.Color(255, 255, 255));
         bntSelecionar.setText("Selecionar");
         bntSelecionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,11 +119,12 @@ public class ClienteJD extends javax.swing.JDialog {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 494, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(bntAdicionar, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
-                                .addComponent(bntRemover, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(bntEditar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(bntSelecionar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(bntAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(bntSelecionar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(bntEditar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(bntRemover, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -124,13 +138,13 @@ public class ClienteJD extends javax.swing.JDialog {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(bntAdicionar)
+                        .addComponent(bntAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(bntRemover)
+                        .addComponent(bntRemover, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(bntEditar)
+                        .addComponent(bntEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(bntSelecionar)))
+                        .addComponent(bntSelecionar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(103, Short.MAX_VALUE))
         );
 
